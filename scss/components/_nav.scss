@@ -1,0 +1,26 @@
+.nav{
+    width: 100%;
+    @include pad-marg(0,0);
+    background-color: $violeta;
+    &__cont{
+        background-color: $violeta;
+        @include pad-marg(1%,0);
+        &__logo{
+            justify-content: left;
+            font-family: $font-play;
+            font-size: 40px;
+            font-weight: 700;
+            color: $blanco;  
+        }
+        &__nav1{
+            justify-content: right;
+            &__nav2{
+                a{
+                    font-family: $font-play;
+                    font-size: 30px;
+                    color: $blanco;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+@mixin pad-marg ($padding, $margin){
+    padding: $padding;
+    margin: $margin;
+}
+@mixin w-h ($w,$h){
+    width: $w;
+    height: $h;
+}

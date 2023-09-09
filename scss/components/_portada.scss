@@ -1,0 +1,13 @@
+.portada{
+    background-image: url('../assets/images/portada.jpg') ;
+    @include w-h(100%, 400px);
+    background-position: center;
+    h1{
+        color: $blanco;
+        @include pad-marg(2%,0);
+    }
+    p{
+        color: $blanco;
+        @include pad-marg(2%,0);
+    }
+}

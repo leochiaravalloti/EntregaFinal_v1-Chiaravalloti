@@ -1,0 +1,12 @@
+.nos{
+    background-color: $vio_claro;
+    display: flex;
+    flex-direction: row;
+    @include pad-marg(4%,0);
+    &__rz{
+        font-family: $font-play;
+        font-size: 2rem;
+        justify-content: center;
+        @include pad-marg(0 4% 0 0,0);
+    }
+}
