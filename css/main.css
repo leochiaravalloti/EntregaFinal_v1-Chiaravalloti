@@ -33,6 +33,27 @@
   color: #EAF2EF;
 }
 
+.footer {
+  width: 100%;
+}
+.footer__cont {
+  background: linear-gradient(to bottom, #521945, #912F56);
+  align-items: center;
+}
+.footer__cont a h4 {
+  justify-content: center;
+  font-family: "Play", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #EAF2EF;
+}
+.footer__cont p {
+  font-family: "Alata", sans-serif;
+  font-size: 30px;
+  color: #EAF2EF;
+  justify-content: center;
+}
+
 .nos {
   background-color: #912F56;
   display: flex;

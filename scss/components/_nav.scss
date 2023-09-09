@@ -24,3 +24,27 @@
         }
     }
 }
+.footer{
+    width: 100%;
+    &__cont{
+        background: linear-gradient(to bottom, $violeta, $vio_claro);
+        align-items: center;
+        a{
+            h4{
+                justify-content: center;
+                font-family: $font-play;
+                font-size: 40px;
+                font-weight: 700;
+                color: $blanco;
+            }
+        }
+        p{
+            font-family: $font-alata;
+            font-size: 30px;
+            color: $blanco;
+            justify-content: center;
+        }
+    }
+    
+    
+}
