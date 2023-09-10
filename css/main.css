@@ -40,6 +40,9 @@
   background: linear-gradient(to bottom, #521945, #912F56);
   align-items: center;
 }
+.footer__cont a {
+  text-decoration: none;
+}
 .footer__cont a h4 {
   justify-content: center;
   font-family: "Play", sans-serif;
@@ -53,6 +56,9 @@
   color: #EAF2EF;
   justify-content: center;
 }
+.footer__cont p a {
+  font-size: 30px;
+}
 
 .nos {
   background-color: #912F56;
@@ -60,13 +66,15 @@
   flex-direction: row;
   padding: 4%;
   margin: 0;
+  justify-items: center;
 }
 .nos__rz {
+  padding: 0;
+  margin: 0;
+}
+.nos__rz h2 {
   font-family: "Play", sans-serif;
   font-size: 2rem;
-  justify-content: center;
-  padding: 0 4% 0 0;
-  margin: 0;
 }
 
 .paquetes {
@@ -85,6 +93,7 @@
 }
 .paquetes__pack1 img {
   border-radius: 5%;
+  width: 100%;
 }
 .paquetes__pack1 h3 {
   font-size: 27px;
@@ -100,6 +109,7 @@
 }
 .paquetes__pack2 img {
   border-radius: 5%;
+  width: 100%;
 }
 .paquetes__pack2 h3 {
   font-size: 27px;
@@ -115,6 +125,7 @@
 }
 .paquetes__pack3 img {
   border-radius: 5%;
+  width: 100%;
 }
 .paquetes__pack3 h3 {
   font-size: 27px;
@@ -126,6 +137,11 @@
   color: #FFD700;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .portada {
   background-image: url("../assets/images/portada.jpg");
   width: 100%;
@@ -134,13 +150,18 @@
 }
 .portada h1 {
   color: #EAF2EF;
-  padding: 2%;
+  padding: 1% 2%;
   margin: 0;
+  position: relative;
+  top: 40%;
 }
 .portada p {
   color: #EAF2EF;
-  padding: 2%;
+  padding: 0 2%;
   margin: 0;
+  position: relative;
+  top: 40%;
+  font-size: 27px;
 }
 
 /*# sourceMappingURL=main.css.map */

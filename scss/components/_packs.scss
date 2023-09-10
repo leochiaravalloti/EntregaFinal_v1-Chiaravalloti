@@ -12,6 +12,7 @@
         @include pad-marg(0,0 1%);
         img{
             border-radius: 5%;
+            width: 100%;
         }
         h3{
             font-size: 27px;
@@ -25,6 +26,7 @@
         background: radial-gradient( #FF69B4, $vio_claro);
         img{
             border-radius: 5%;
+            width: 100%;
         }
         h3{
             font-size: 27px;
@@ -38,6 +40,7 @@
         background: radial-gradient( #FF69B4, $vio_claro);
         img{
             border-radius: 5%;
+            width: 100%;
         }
         h3{
             font-size: 27px;
@@ -46,4 +49,8 @@
         }
         ul{li{a{color: $dorado;}}}
     }
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }

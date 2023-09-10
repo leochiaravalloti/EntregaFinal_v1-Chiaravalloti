@@ -4,10 +4,15 @@
     background-position: center;
     h1{
         color: $blanco;
-        @include pad-marg(2%,0);
+        @include pad-marg(1% 2%,0);
+        position: relative;
+        top: 40%;
     }
     p{
         color: $blanco;
-        @include pad-marg(2%,0);
+        @include pad-marg(0 2%,0);
+        position: relative;
+        top: 40%;
+        font-size: 27px;
     }
 }

@@ -3,10 +3,12 @@
     display: flex;
     flex-direction: row;
     @include pad-marg(4%,0);
+    justify-items: center;
     &__rz{
-        font-family: $font-play;
-        font-size: 2rem;
-        justify-content: center;
-        @include pad-marg(0 4% 0 0,0);
+        h2{
+            font-family: $font-play;
+            font-size: 2rem;
+        }
+        @include pad-marg(0,0);
     }
 }
