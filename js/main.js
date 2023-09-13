@@ -47,16 +47,16 @@ if(peso > 30){
     }
     console.log("--> Peso ingresado correctamente.") 
 }
-let altura = parseInt(prompt("Ingrese su altura en centimetros."))
+let altura = parseFloat(prompt("Ingrese su altura en metros."))
 while (isNaN(altura)) {
-    altura = parseInt(prompt('Por favor, escriba un número'));
+    altura = parseFloat(prompt('Por favor, escriba un número. Ingrese su altura en metros.'));
    }
-if(altura > 120){
+if(altura > 0 && altura < 2.5){
     console.log("--> Altura ingresada correctamente.") 
 }else{
-    while(altura <= 120){
+    while(altura <= 0 && altura >= 2.5){
         console.log("--> Verifique el dato ingresado, intente nuevamente")
-        altura = prompt("Ingrese su altura en centimetros.")
+        altura = prompt("Ingrese su altura en metros.")
     }
 }
 
