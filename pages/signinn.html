@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Agon Training</title>
+</head>
+<body>
+    <h1>Completa el formulario para registrarte! </h1>
+    <h2>Completa tus datos y elegí el plan que mas te convenga.</h2>
+    <form id="formRegister">
+        <div class="mb-3">
+            <label for="labelEmailUsuario1" class="form-label">Dirección de email</label>
+            <input type="email" class="form-control" id="labelEmailUsuario" aria-describedby="emailHelp" placeholder="Email">
+            <div id="emailHelp" class="form-text">Asegurese de escribirlo correctamente.</div>
+        </div>
+        <div class="mb-3">
+            <label for="labelContraseñaUsuario1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="labelContraseñaUsuario" aria-describedby="passwordHelp">
+            <div id="passwordHelp" class="form-text">Debe contener al menos 8 caracteres.</div>
+        </div>
+        <div class="mb-3">
+            <label for="labelContraseñaRepUsuario1" class="form-label">Ingrese la contraseña nuevamente</label>
+            <input type="password" class="form-control" id="labelContraseñaRepUsuario">
+        </div>
+        <div class="mb-3">
+            <label for="labelNombreUsuario1" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombreUsuario" placeholder="Nombre de ususario">
+        </div>
+        <div class="mb-3">
+            <label for="labelApellidoUsuario1" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="apellidoUsuario" placeholder="Apellido de ususario">
+        </div>
+        <div>
+            <h3>Desea ayuda para seleccionar un plan de trabajo?</h3>
+            <button class="btn btn-primary" id="buttonHelp">SI</button>
+        </div>
+        <div>
+            <form action="">
+                <div class="mb-3">
+                    <label for="labelPesoUsuario1" class="form-label">Peso</label>
+                    <input type="text" class="form-control" id="pesoUsuario" placeholder="Peso en kilogramos">
+                </div>
+                <div class="mb-3">
+                    <label for="labelAlturaUsuario1" class="form-label">Altura</label>
+                    <input type="text" class="form-control" id="alturaUsuario" placeholder="Altura en centímetros">
+                </div>
+                <button class="btn btn-primary" id="buttonRecomendacion">Recomendación</button>
+            </form>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">Servicios</label>
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>Seleccione un paquete...</option>
+              <option value="1">Paquete regular</option>
+              <option value="2">Paquete Plata</option>
+              <option value="3">Paquete Oro</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-success" id="btnRegistrar">
+            Registrar
+          </button>
+    </form>
+</body>
+<script src="../eventos/signing.js"></script>
+<script src="../classes/usuarios.js"></script>
+<script src="../constants/index.js"></script>
+</html>

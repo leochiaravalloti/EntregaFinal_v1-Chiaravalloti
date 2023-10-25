@@ -4,10 +4,12 @@
     flex-direction: row;
     @include pad-marg(4%,0);
     justify-items: center;
+    align-items: center;
     &__rz{
         h2{
             font-family: $font-play;
             font-size: 2rem;
+            text-align: center;
         }
         @include pad-marg(0,0);
     }
