@@ -1,0 +1,11 @@
+.registrarse{
+    display: flex;
+    background-color: $vio_claro;
+    &__boton{
+        font-family: $font-alata;
+        font-size: 2rem ;
+        border-radius: 4%;
+        background-color: $violeta;
+        color: $blanco;
+    }
+}

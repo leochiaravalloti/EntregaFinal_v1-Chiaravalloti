@@ -1,4 +1,9 @@
-let clientes = []
+let botonReg = document.getElementById("btnreg");
+botonReg.onclick = () => {
+    return window.location = "../pages/signin.html";
+}
+
+/*let clientes = []
 
 let nombreAlumno
 let apellidoAlumno
@@ -150,4 +155,4 @@ while(dec.trim().toUpperCase() == "SI" ){
     }
     dec = prompt("Desea realizar una nueva inscripcion?")
 }
-alert("Muchas gracias!")
+alert("Muchas gracias!")*/
