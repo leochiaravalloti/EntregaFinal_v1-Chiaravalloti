@@ -1,7 +1,10 @@
-const getProfesor = (profesores = [], identificador = "") => {
-  return profesores.find((unUsuario) => unUsuario.email === identificador);
+const getUsuario = (usuarios = [], identificador = "") => {
+  return usuarios.find((unUsuario) => unUsuario.email === identificador);
 };
 
-const getClientes = (clientes = [], identificador = "") => {
-  return clientes.find((unUsuario) => unUsuario.email === identificador);
+const isExisteUsuario = (usuarios = [], identificador = "") => {
+  return usuarios.some(
+    (unUsuario) =>
+      unUsuario.email.toLowerCase() === identificador.toLowerCase()
+  );
 };

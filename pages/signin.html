@@ -18,57 +18,62 @@
         <div class="mb-3">
             <label for="labelEmailUsuario1" class="form-label">Dirección de email</label>
             <input type="email" class="form-control" id="labelEmailUsuario" aria-describedby="emailHelp" placeholder="Email">
-            <div id="emailHelp" class="form-text">Asegurese de escribirlo correctamente.</div>
+            <div id="emailHelp" class="form-text"></div>
         </div>
         <div class="mb-3">
             <label for="labelContraseñaUsuario1" class="form-label">Contraseña</label>
             <input type="password" class="form-control" id="labelContraseñaUsuario" aria-describedby="passwordHelp">
-            <div id="passwordHelp" class="form-text">Debe contener al menos 8 caracteres.</div>
+            <div id="passwordHelp" class="form-text"></div>
         </div>
         <div class="mb-3">
             <label for="labelContraseñaRepUsuario1" class="form-label">Ingrese la contraseña nuevamente</label>
-            <input type="password" class="form-control" id="labelContraseñaRepUsuario">
+            <input type="password" class="form-control" id="labelContraseñaRepUsuario" aria-describedby="rePasswordHelp">
+            <div id="rePasswordHelp" class="form-text"></div>
         </div>
         <div class="mb-3">
             <label for="labelNombreUsuario1" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombreUsuario" placeholder="Nombre de ususario">
+            <input type="text" class="form-control" id="nombreUsuario" placeholder="Nombre de ususario" aria-describedby="nombreHelp">
+            <div id="nombreHelp" class="form-text"></div>
         </div>
         <div class="mb-3">
             <label for="labelApellidoUsuario1" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="apellidoUsuario" placeholder="Apellido de ususario">
+            <input type="text" class="form-control" id="apellidoUsuario" placeholder="Apellido de ususario" aria-describedby="apellidoHelp">
+            <div id="apellidoHelp" class="form-text"></div>
         </div>
-        <div>
-            <h3>Desea ayuda para seleccionar un plan de trabajo?</h3>
-            <button class="btn btn-primary" id="buttonHelp">SI</button>
-        </div>
-        <div>
+        <div id="recomendacion">
+            <h3>Te ayudamos a elegir un paquete!</h3>
             <form action="">
                 <div class="mb-3">
                     <label for="labelPesoUsuario1" class="form-label">Peso</label>
-                    <input type="text" class="form-control" id="pesoUsuario" placeholder="Peso en kilogramos">
+                    <input type="text" class="form-control" id="pesoUsuario" placeholder="Peso en kilogramos" aria-describedby="pesoHelp">
+                    <div id="pesoHelp" class="form-text"></div>
                 </div>
                 <div class="mb-3">
                     <label for="labelAlturaUsuario1" class="form-label">Altura</label>
-                    <input type="text" class="form-control" id="alturaUsuario" placeholder="Altura en centímetros">
+                    <input type="text" class="form-control" id="alturaUsuario" placeholder="Altura en centímetros" aria-describedby="alturaHelp">
+                    <div id="alturaHelp" class="form-text"></div>
                 </div>
-                <button class="btn btn-primary" id="buttonRecomendacion">Recomendación</button>
+                <button class="btn btn-primary" id="buttonRecomendacion">Generar recomendación</button>
             </form>
+            <div ><P id="recomendacionText"></P></div>
         </div>
         <div class="input-group mb-3">
-            <label class="input-group-text" for="inputGroupSelect01">Servicios</label>
-            <select class="form-select" id="inputGroupSelect01">
-              <option selected>Seleccione un paquete...</option>
-              <option value="1">Paquete regular</option>
-              <option value="2">Paquete Plata</option>
-              <option value="3">Paquete Oro</option>
+            <label class="input-group-text" for=" labelPaqueteElegido1">Servicios</label>
+            <select class="form-select" id="paqueteElegido">
+              <option value="0" selected>Seleccione un paquete...</option>
+              <option value="Básico">Paquete Básico</option>
+              <option value="Plata">Paquete Plata</option>
+              <option value="Oro">Paquete Oro</option>
             </select>
+            <p id="paqueteHelp"></p>
           </div>
           <button type="submit" class="btn btn-success" id="btnRegistrar">
             Registrar
           </button>
     </form>
 </body>
-<script src="../eventos/signing.js"></script>
-<script src="../classes/usuarios.js"></script>
-<script src="../constants/index.js"></script>
+<script src="../js/constants/index.js"></script>
+<script src="../js/mocks/clientes.js"></script>
+<script src="../js/classes/cliente.js"></script>
+<script src="../js/main-signin.js"></script>
 </html>

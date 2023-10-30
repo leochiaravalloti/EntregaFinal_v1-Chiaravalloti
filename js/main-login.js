@@ -37,7 +37,7 @@ botonSub.onclick = (e) => {
     if(verificarForm(emailUsuario,contrasena)!=true){
         return false;
     }
-    const profesor = getProfesor(profesoresMock, emailUsuario);
+    const profesor = getUsuario(profesoresMock, emailUsuario);
     if(profesor != undefined){
         if(profesor.contrasena === contrasena){
             alert("Bienvenido profe " + profesor.nombre)
@@ -47,7 +47,7 @@ botonSub.onclick = (e) => {
             return alertaContra.innerText = "La contraseña es incorrecta.";
         }
     } 
-    const cliente = getProfesor(clientesMock, emailUsuario);
+    const cliente = getUsuario(clientesMock, emailUsuario);
     if(cliente != undefined){
         if(cliente.contrasena === contrasena){
             alert("Bienvenido " + cliente.nombre)
