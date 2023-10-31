@@ -50,9 +50,8 @@ botonSub.onclick = (e) => {
     const cliente = getUsuario(clientesMock, emailUsuario);
     if(cliente != undefined){
         if(cliente.contrasena === contrasena){
-            alert("Bienvenido " + cliente.nombre)
             sessionStorage.setItem("usuarioOnline", JSON.stringify(cliente));
-            return window.location = "../pages/index-clientes.html"
+            return window.location = "./pages/index-clientes.html"
         } else{
             return alertaContra.innerText = "La contraseña es incorrecta.";
         }
