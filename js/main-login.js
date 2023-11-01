@@ -51,7 +51,7 @@ botonSub.onclick = (e) => {
     if(cliente != undefined){
         if(cliente.contrasena === contrasena){
             sessionStorage.setItem("usuarioOnline", JSON.stringify(cliente));
-            return window.location = "./pages/index-clientes.html"
+            return window.location = "./index-clientes.html"
         } else{
             return alertaContra.innerText = "La contraseña es incorrecta.";
         }

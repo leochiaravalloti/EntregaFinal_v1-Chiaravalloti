@@ -243,5 +243,5 @@ const registrarUsuario = (
   } 
   let unUsuario = new Cliente(emailUsuario, contrasenaUsuario, nombreUsuario, apellidoUsuario, paqueteElegido);
   clientesMock.push(unUsuario);
-  return window.location = "./pages/index-clientes.html";
+  return window.location = "./index-clientes.html";
 };
