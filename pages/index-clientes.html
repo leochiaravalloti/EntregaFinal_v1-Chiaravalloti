@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,13 +13,48 @@
     <title>Agon Training</title>
 </head>
 <body>
-    <h1>PLATAFORMA</h1>
-    <h2 id="mensjBienvenida"></h2>
-    <section id="dataCliente"></section>
-    <section>
-        <h3>RUTINAS DISPONIBLES</h3>
-        <P>Estas son las rutinas que nuestros entrenadores prepararon específicamente para vos:</P>
-        <div id="rutinas"></div>
+    <section class="clientes">
+        <img src="../assets/images/img_main1.jpg" alt="" class="clientes__img1">
+        <img src="../assets/images/img_main2.jpg" alt="" class="clientes__img2">
+        <img src="../assets/images/img_main3.jpg" alt="" class="clientes__img3">
+        <img src="../assets/images/img_main4.jpg" alt="" class="clientes__img4">
+        <img src="../assets/images/img_main5.jpg" alt="" class="clientes__img5">
+        <img src="../assets/images/img_main6.jpg" alt="" class="clientes__img6">
+        <div class="clientes__text">
+            <h1>PLATAFORMA-AGON TRAINING</h1>
+            <h2 id="mensjBienvenida" class="clientes__text__welcome"></h2>
+            <div id="dataCliente" class="clientes__text__data">
+                <p id="dataNombre"></p>
+                <p id="dataApellido"></p>
+                <p id="dataServicio"></p>
+            </div>
+            <div id="tiempo" class="clientes__text__tiempo">
+                <h5>El clima ideal para entrenar!</h5>
+                <p id="temperatura" class="clientes__text__tiempo__temp"></p>
+                <p id="humedad" class="clientes__text__tiempo__humedad"></p>
+                <p id="lluvia" class="clientes__text__tiempo__lluvia"></p>
+                <p id="viento" class="clientes__text__tiempo__viento"></p>
+            </div>
+            <div class="clientes__text__rutinas">
+                <h3>RUTINAS DISPONIBLES</h3>
+                <P>Estas son las rutinas que nuestros entrenadores prepararon específicamente para vos:</P>
+                <div id="rutina" class="clientes__text__rutinas__rut">
+                    <div id="buttonDateChange" class="clientes__text__rutina__rut__buttons">
+                        <button id="buttonAnterior" >ANTERIOR</button>
+                        <button id="buttonSiguiente">SIGUIENTE</button>
+                    </div>
+                    <h4 id="rutinAFecha" class=""></h4>
+                    <ul class="clientes__text__rutinas__rut__list">
+                        <li id="ex1" class="clientes__text__rutinas__rut__list__ex1Oculto "></li>
+                        <li id="ex2" class="clientes__text__rutinas__rut__list__ex2Oculto "></li>
+                        <li id="ex3" class="clientes__text__rutinas__rut__list__ex3Oculto "></li>
+                        <li id="ex4" class="clientes__text__rutinas__rut__list__ex4Oculto "></li>
+                        <li id="ex5" class="clientes__text__rutinas__rut__list__ex5Oculto "></li>
+                        <li id="ex6" class="clientes__text__rutinas__rut__list__ex6Oculto "></li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 <footer class="footer">
@@ -29,8 +65,8 @@
         <P>Desarrolado por <a href="https://www.linkedin.com/in/lgchiaravalloti/">@leochiara</a></P>
     </div>
 </footer> 
-<script src="../js/mocks/clientes.js"></script>
-<script src="../js/mocks/profesores.js"></script>
 <script src="../js/constants/index.js"></script>
-<script src="../js/login.js"></script>
+<script src="../js/mocks/clientes.js"></script>
+<script src="../js/mocks/rutinas.js"></script>
+<script src="../js/main-clientes.js"></script>
 </html>

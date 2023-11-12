@@ -1,0 +1,91 @@
+.login{
+    background-color: $vio_claro;
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr 300px ;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'dp1 dp2 dp2 dp3';
+    &__img1{
+        grid-area: dp1;
+        @include pad-marg(0,0);
+    }
+    &__img2{
+        grid-area: dp3;
+        @include pad-marg(0,0);
+    }
+    &__text{
+        grid-area: dp2;
+        background-color: $vio_claro;
+        @include pad-marg(5%,0);
+    }
+}
+.signin{
+    background-color: $vio_claro;
+    display: grid;
+    grid-template-columns: 300px 1fr 300px ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'dp1 dp2 dp3'
+    'dp4 dp2 dp5';
+    &__img1{
+        grid-area: dp1;
+        @include pad-marg(0,0);
+    }
+    &__img2{
+        grid-area: dp3;
+        @include pad-marg(0,0);
+    }
+    &__img3{
+        grid-area: dp4;
+        @include pad-marg(0,0);
+    }
+    &__img4{
+        grid-area: dp5;
+        @include pad-marg(0,0);
+    }
+    &__text{
+        grid-area: dp2;
+        background-color: $vio_claro;
+        @include pad-marg(5%,0);
+        &__form{
+            &__recom{
+                @include pad-marg(0 7%,0);
+                color: $blanco;
+                form{
+                    div{
+                        label{
+                            color: $blanco;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.footer_logsignin{
+    @include w-h(100%, 10%);
+    @include pad-marg(0,0);
+    &__cont{
+        background: linear-gradient(to bottom, $violeta, $vio_claro);
+        align-items: center;
+        a{
+            text-decoration: none;
+            h4{
+                justify-content: center;
+                font-family: $font-play;
+                font-size: 40px;
+                font-weight: 700;
+                color: $blanco;
+            }
+        }
+        p{
+            font-family: $font-alata;
+            font-size: 30px;
+            color: $blanco;
+            justify-content: center;
+            a{
+                font-size: 30px;
+            }
+        }
+    }  
+}

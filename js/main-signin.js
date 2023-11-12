@@ -243,5 +243,14 @@ const registrarUsuario = (
   } 
   let unUsuario = new Cliente(emailUsuario, contrasenaUsuario, nombreUsuario, apellidoUsuario, paqueteElegido);
   clientesMock.push(unUsuario);
-  return window.location = "./index-clientes.html";
+  Swal.fire({
+    position: "center",
+    icon: "success",
+    title: "Has sido registrado correctamente.",
+    showConfirmButton: false,
+    timer: 2000
+  });
+  sessionStorage.setItem("usuarioOnline", JSON.stringify(emailUsuario));
+  return setTimeout(()=> {window.location = "./index-clientes.html";}, 2000)
+  
 };

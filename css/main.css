@@ -178,4 +178,267 @@
   color: #EAF2EF;
 }
 
+.clientes {
+  background-color: #912F56;
+  display: grid;
+  grid-template-columns: 300px 1fr 300px;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "dp1 tx dp2" "dp3 tx dp4" "dp5 tx dp6";
+}
+.clientes__img1 {
+  grid-area: dp1;
+  padding: 0;
+  margin: 0;
+}
+.clientes__img2 {
+  grid-area: dp2;
+  padding: 0;
+  margin: 0;
+}
+.clientes__img3 {
+  grid-area: dp3;
+  padding: 0;
+  margin: 0;
+}
+.clientes__img4 {
+  grid-area: dp4;
+  padding: 0;
+  margin: 0;
+}
+.clientes__img5 {
+  grid-area: dp5;
+  padding: 0;
+  margin: 0;
+}
+.clientes__img6 {
+  grid-area: dp6;
+  padding: 0;
+  margin: 0;
+}
+.clientes__text {
+  grid-area: tx;
+  background-color: #912F56;
+  padding: 5%;
+  margin: 0;
+}
+.clientes__text h1 {
+  font-size: 2rem;
+  color: #EAF2EF;
+}
+.clientes__text h2 {
+  font-size: 1.5rem;
+  color: #EAF2EF;
+}
+.clientes__text__data {
+  border: solid 2px #EAF2EF;
+  padding: 2%;
+  margin: 0;
+}
+.clientes__text__data p {
+  font-size: 0.6rem;
+  padding: 0;
+  margin: 0;
+  color: #EAF2EF;
+}
+.clientes__text__tiempo {
+  display: grid;
+  grid-template-columns: 10rem 10rem;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "tm tm" "hm tp" "pp tp" "vv tp";
+}
+.clientes__text__tiempo h5 {
+  grid-area: tm;
+  color: #FFD700;
+}
+.clientes__text__tiempo p {
+  color: #FFD700;
+  padding: 0;
+  margin: 0;
+}
+.clientes__text__tiempo__temp {
+  grid-area: tp;
+  font-size: 3rem;
+}
+.clientes__text__tiempo__humedad {
+  grid-area: hm;
+  font-size: 0.9rem;
+}
+.clientes__text__tiempo__viento {
+  grid-area: vv;
+  font-size: 0.9rem;
+}
+.clientes__text__tiempo__lluvia {
+  grid-area: pp;
+  font-size: 0.9rem;
+}
+.clientes__text__rutinas__rut__list__ex1Oculto {
+  display: none;
+}
+.clientes__text__rutinas__rut__list__ex2Oculto {
+  display: none;
+}
+.clientes__text__rutinas__rut__list__ex3Oculto {
+  display: none;
+}
+.clientes__text__rutinas__rut__list__ex4Oculto {
+  display: none;
+}
+.clientes__text__rutinas__rut__list__ex5Oculto {
+  display: none;
+}
+.clientes__text__rutinas__rut__list__ex6Oculto {
+  display: none;
+}
+.clientes__text__rutinas__rut__list__ex1 {
+  display: flex;
+}
+.clientes__text__rutinas__rut__list__ex2 {
+  display: flex;
+}
+.clientes__text__rutinas__rut__list__ex3 {
+  display: flex;
+}
+.clientes__text__rutinas__rut__list__ex4 {
+  display: flex;
+}
+.clientes__text__rutinas__rut__list__ex5 {
+  display: flex;
+}
+.clientes__text__rutinas__rut__list__ex6 {
+  display: flex;
+}
+
+.rutinas__rut__list__ex1Oculto {
+  display: none;
+}
+.rutinas__rut__list__ex2Oculto {
+  display: none;
+}
+.rutinas__rut__list__ex3Oculto {
+  display: none;
+}
+.rutinas__rut__list__ex4Oculto {
+  display: none;
+}
+.rutinas__rut__list__ex5Oculto {
+  display: none;
+}
+.rutinas__rut__list__ex6Oculto {
+  display: none;
+}
+.rutinas__rut__list__ex1 {
+  display: flex;
+}
+.rutinas__rut__list__ex2 {
+  display: flex;
+}
+.rutinas__rut__list__ex3 {
+  display: flex;
+}
+.rutinas__rut__list__ex4 {
+  display: flex;
+}
+.rutinas__rut__list__ex5 {
+  display: flex;
+}
+.rutinas__rut__list__ex6 {
+  display: flex;
+}
+
+.login {
+  background-color: #912F56;
+  display: grid;
+  grid-template-columns: 300px 1fr 1fr 300px;
+  grid-template-rows: 1fr;
+  grid-template-areas: "dp1 dp2 dp2 dp3";
+}
+.login__img1 {
+  grid-area: dp1;
+  padding: 0;
+  margin: 0;
+}
+.login__img2 {
+  grid-area: dp3;
+  padding: 0;
+  margin: 0;
+}
+.login__text {
+  grid-area: dp2;
+  background-color: #912F56;
+  padding: 5%;
+  margin: 0;
+}
+
+.signin {
+  background-color: #912F56;
+  display: grid;
+  grid-template-columns: 300px 1fr 300px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "dp1 dp2 dp3" "dp4 dp2 dp5";
+}
+.signin__img1 {
+  grid-area: dp1;
+  padding: 0;
+  margin: 0;
+}
+.signin__img2 {
+  grid-area: dp3;
+  padding: 0;
+  margin: 0;
+}
+.signin__img3 {
+  grid-area: dp4;
+  padding: 0;
+  margin: 0;
+}
+.signin__img4 {
+  grid-area: dp5;
+  padding: 0;
+  margin: 0;
+}
+.signin__text {
+  grid-area: dp2;
+  background-color: #912F56;
+  padding: 5%;
+  margin: 0;
+}
+.signin__text__form__recom {
+  padding: 0 7%;
+  margin: 0;
+  color: #EAF2EF;
+}
+.signin__text__form__recom form div label {
+  color: #EAF2EF;
+}
+
+.footer_logsignin {
+  width: 100%;
+  height: 10%;
+  padding: 0;
+  margin: 0;
+}
+.footer_logsignin__cont {
+  background: linear-gradient(to bottom, #521945, #912F56);
+  align-items: center;
+}
+.footer_logsignin__cont a {
+  text-decoration: none;
+}
+.footer_logsignin__cont a h4 {
+  justify-content: center;
+  font-family: "Play", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #EAF2EF;
+}
+.footer_logsignin__cont p {
+  font-family: "Alata", sans-serif;
+  font-size: 30px;
+  color: #EAF2EF;
+  justify-content: center;
+}
+.footer_logsignin__cont p a {
+  font-size: 30px;
+}
+
 /*# sourceMappingURL=main.css.map */

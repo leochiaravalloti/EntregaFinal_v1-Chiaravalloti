@@ -1,0 +1,165 @@
+.clientes{
+    background-color: $vio_claro;
+    display: grid;
+    grid-template-columns: 300px 1fr 300px ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'dp1 tx dp2'
+    'dp3 tx dp4'
+    'dp5 tx dp6';
+    &__img1{
+        grid-area: dp1;
+        @include pad-marg(0,0);
+    }
+    &__img2{
+        grid-area: dp2;
+        @include pad-marg(0,0);
+    }
+    &__img3{
+        grid-area: dp3;
+        @include pad-marg(0,0);
+    }
+    &__img4{
+        grid-area: dp4;
+        @include pad-marg(0,0);
+    }
+    &__img5{
+        grid-area: dp5;
+        @include pad-marg(0,0);
+    }
+    &__img6{
+        grid-area: dp6;
+        @include pad-marg(0,0);
+    }
+    &__text{
+        grid-area: tx;
+        background-color: $vio_claro;
+        @include pad-marg(5%,0);
+        h1{
+            font-size: 2rem;
+            color: $blanco;
+        }
+        h2{
+            font-size: 1.5rem;
+            color: $blanco;
+        }
+        &__data{
+            border: solid 2px $blanco ;
+            @include pad-marg(2%, 0);
+            p{ font-size: 0.6rem; @include pad-marg(0,0); color: $blanco;}
+        }
+        &__tiempo{
+            display: grid;
+            grid-template-columns: 10rem 10rem ;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            'tm tm'
+            'hm tp'
+            'pp tp'
+            'vv tp';
+            h5{grid-area: tm; color: $dorado;}
+            p{color: $dorado; @include pad-marg(0,0);}
+            &__temp{
+                grid-area: tp;
+                font-size: 3rem;
+            }
+            &__humedad{
+                grid-area: hm;
+                font-size: 0.9rem;
+            }
+            &__viento{
+                grid-area: vv;
+                font-size: 0.9rem;
+            }
+            &__lluvia{
+                grid-area: pp;
+                font-size: 0.9rem;
+            }
+        }
+        &__rutinas{
+            &__rut{
+                &__list{
+                    &__ex1Oculto{
+                        display: none;
+                    }
+                    &__ex2Oculto{
+                        display: none;
+                    }
+                    &__ex3Oculto{
+                        display: none;
+                    }
+                    &__ex4Oculto{
+                        display: none;
+                    }
+                    &__ex5Oculto{
+                        display: none;
+                    }
+                    &__ex6Oculto{
+                        display: none;
+                    }
+                    &__ex1{
+                        display: flex;
+                    }
+                    &__ex2{
+                        display: flex;
+                    }
+                    &__ex3{
+                        display: flex;
+                    }
+                    &__ex4{
+                        display: flex;
+                    }
+                    &__ex5{
+                        display: flex;
+                    }
+                    &__ex6{
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.rutinas{
+    &__rut{
+        &__list{
+            &__ex1Oculto{
+                display: none;
+            }
+            &__ex2Oculto{
+                display: none;
+            }
+            &__ex3Oculto{
+                display: none;
+            }
+            &__ex4Oculto{
+                display: none;
+            }
+            &__ex5Oculto{
+                display: none;
+            }
+            &__ex6Oculto{
+                display: none;
+            }
+            &__ex1{
+                display: flex;
+            }
+            &__ex2{
+                display: flex;
+            }
+            &__ex3{
+                display: flex;
+            }
+            &__ex4{
+                display: flex;
+            }
+            &__ex5{
+                display: flex;
+            }
+            &__ex6{
+                display: flex;
+            }
+        }
+    }
+}

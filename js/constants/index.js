@@ -8,3 +8,9 @@ const isExisteUsuario = (usuarios = [], identificador = "") => {
       unUsuario.email.toLowerCase() === identificador.toLowerCase()
   );
 };
+
+function findObjectByEmail(array= [], email = "") {
+  return array.find(function (object) {
+    return object.email === email;
+  });
+}
